@@ -1,0 +1,269 @@
+@charset "UTF-8";
+
+/* ベースのスタイル
+----------------------------------------------------- */
+body {
+  font-family: 'Noto Sans Jp', sans-serif;
+  line-height: 1.75;
+  font-weight: 700;
+  color: #333333
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.container {
+  max-width: 67.5rem;
+  margin: auto;
+  padding: 2em;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-style: italic;
+  color: brown;
+  margin-bottom: 2rem;
+  text-align: center;
+  border-bottom: 3px solid;
+}
+
+
+/*ヘッダー
+--------------------------------------*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 1;
+  padding: 1rem;
+  border-radius: 2rem;
+  color: brown;
+}
+
+.header-name {
+  font-size: 2rem;
+}
+
+.header-name-sab {
+  font-size: 1rem
+}
+
+.hamburger-button {
+  font-size: 2rem;
+}
+
+
+/* ハンバーガーメニュー、ヘッダーナビ
+----------------------------------------------*/
+@media (max-width: 767px) {
+  .hamburger-menu {
+    position: fixed;
+    top: 5.375rem;
+    left: 0.4375rem;
+    width: 96vw;
+    height: auto;
+    margin: auto;
+    background-color: antiquewhite;
+    border-radius: 2rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.4861rem;
+    transition: opacity .7s ease;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 9990;
+  }
+}
+
+@media (max-width: 767px) {
+  .hamburger-menu .button {
+    margin-left: 2.9063rem;
+    padding: 0.8594rem 4.7234rem 1.1406rem 4.5938rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    letter-spacing: -0.07em;
+  }
+}
+
+@media (max-width: 767px) {
+  .hamburger-menu .button-icon {
+    right: 0.875rem;
+  }
+}
+
+/* アクティブ状態*/
+.hamburger-menu-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hamburger-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+}
+
+.hamburger-menu a {
+  color: brown;
+}
+
+.hamburger-menu a:hover {
+  color: aliceblue;
+}
+
+/*カバー*/
+.cover {
+  position: relative;
+}
+
+.image-text {
+  position: absolute;
+  bottom: 0rem;
+  left: 3rem;
+  color:#333333;
+  font-family:"Noto Serif JP",serif ;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+
+.image-text span {
+  opacity: 0;
+  display: inline-block;
+  transform: translateY(10px);
+  animation: fadeUp 1.5s ease forwards;
+}
+
+.image-text span:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.image-text span:nth-child(2) {
+  animation-delay: 0.7s;
+}
+
+.image-text span:nth-child(3) {
+  animation-delay: 1.2s;
+}
+
+.image-text span:nth-child(4) {
+  animation-delay: 1.7s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*コンセプト
+--------------------------------*/
+
+
+/*プロフィール
+--------------------------------*/
+.profile-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-item-image {
+  max-width: 67.5rem;
+  margin: auto;
+  width: 100%;
+}
+
+/*サービス
+----------------------------------*/
+.service-group {
+  padding: 1rem 1rem 1rem 1rem;
+  border: 1px solid brown;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+  background-color:rgba(165, 105, 79, 0.1) ;
+}
+.service-group-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.service-group-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.process-group{
+  padding: 1rem 1rem 1rem 1rem;
+  border: 1px solid brown;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+  background-color:rgba(165, 105, 79, 0.1) ;
+}
+
+.process-group-text{
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.process-group-list{
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+}
+
+/*お問い合わせ
+-----------------------------------*/
+.contact-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-group a {
+  color: #333333;
+  padding-left: 1rem;
+}
+
+
+
+
+/*フッター
+-----------------------------------*/
+.footer {
+  background-color:gray;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-copyright {
+  font-size: 0.5rem;
+}
+
+.footer-name-sab {
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+
+.footer a {
+  color: #333333;
+  font-weight: 400;
+}
