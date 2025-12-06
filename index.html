@@ -25,30 +25,72 @@
 
   <body>
     <header class="header">
-      <h1 class="header-name">一木<span class="header-name-sab">hitotoki</span></h1>
+      <h1 class="header-logo"><img src="image/unnamed.png" alt="hitotoki"></h1>
       <button type="button" class="hamburger-button"><i class="bi bi-list"></i></button>
       <!--ナビゲーション-->
       <nav class="hamburger-menu header-nav">
         <ul class="hamburger-menu-list-group header-nav-list-group">
-          <li><a href="#concept">concept</a></li>
-          <li><a href="#profile">profile</a></li>
-          <li><a href="#gallery">gallery</a></li>
-          <li><a href="#service">service</a></li>
-          <li><a href="#serch">contact</a></li>
+          <li><a href="#concept">コンセプト</a></li>
+          <li><a href="#profile">プロフィール</a></li>
+          <li><a href="#gallery">施工事例</a></li>
+          <li><a href="#service">サービス内容</a></li>
+          <li><a href="#serch">お問い合わせ</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
       <div class="cover">
-        <img src="image/unnamed.png" alt="">
-        <div class="image-text">
-          <span>人と木を大切に</span>
-          <span>暮らしに寄り添う</span>
-          <span>"ホッとするひととき"を</span>
-          <span>お届けしたい</span>
+        <!--カルーセル-->
+        <div class="cover-slick">
+          <!--1枚目-->
+          <div class="cover-slick-item">
+            <picture>
+              <img src="image/cover1.jpeg" alt="">
+            </picture>
+            <div class="cover-pickup">
+              <p class="cover-catch">人と木を大切に<br>暮らしに寄り添う<br>ホッとするひとときを<br>お届けしたい</p>
+            </div>
+          </div>
+          <!--2枚目-->
+          <div class="cover-slick-item">
+            <picture>
+              <img src="image/cover2.jpg" alt="">
+            </picture>
+            <div class="cover-pickup">
+              <p class="cover-catch">人と木を大切に<br>暮らしに寄り添う<br>ホッとするひとときを<br>お届けしたい</p>
+            </div>
+          </div>
+          <!--3枚目-->
+          <div class="cover-slick-item">
+            <picture>
+              <img src="image/cover3.jpg" alt="">
+            </picture>
+            <div class="cover-pickup">
+              <p class="cover-catch">人と木を大切に<br>暮らしに寄り添う<br>ホッとするひとときを<br>お届けしたい</p>
+            </div>
+          </div>
+          <!--4枚目-->
+          <div class="cover-slick-item">
+            <picture>
+              <img src="image/cover4.jpg" alt="">
+            </picture>
+            <div class="cover-pickup">
+              <p class="cover-catch">人と木を大切に<br>暮らしに寄り添う<br>ホッとするひとときを<br>お届けしたい</p>
+            </div>
+          </div>
+          <!--5枚目-->
+          <div class="cover-slick-item">
+            <picture>
+              <img src="image/cover5.jpg" alt="">
+            </picture>
+            <div class="cover-pickup">
+              <p class="cover-catch">人と木を大切に<br>暮らしに寄り添う<br>ホッとするひとときを<br>お届けしたい</p>
+            </div>
+          </div>
         </div>
       </div>
+
       <!--concept-->
       <section id="concept" class="concept">
         <div class="container">
@@ -61,8 +103,8 @@
         <div class="container">
           <h1 class="section-title">profile</h1>
           <div class="profile-item">
-            <img src="image/IMG_9894.png" alt="" class="profile-item-image">
-            <p class="profile-otem-text">15年間、製材所の工場長として数多くのテーブル天板や家具材を手掛けてきました。その前には、10年間の林業経験を通じて、木が育ち、伐られ、材として生まれ変わるまでの流れを現場で見つめ続けてきました。<br>木の命と向き合い、木の個性を読み、最も美しく活かす方法を探る——
+            <img src="image/IMG_9894.jpg" alt="" class="profile-item-image">
+            <p class="profile-item-text">15年間、製材所の工場長として数多くのテーブル天板や家具材を手掛けてきました。その前には、10年間の林業経験を通じて、木が育ち、伐られ、材として生まれ変わるまでの流れを現場で見つめ続けてきました。<br>木の命と向き合い、木の個性を読み、最も美しく活かす方法を探る——
               その積み重ねが今の私のものづくりの原点です。レジンテーブルや無垢材テーブルを中心に、木が持つ自然の美しさを最大限に引き出しながら、長く愛される一枚をお届けします。
               木の魅力を知り尽くした職人として、そしてずっと「木と共に」歩んできた人間として、一つひとつ心を込めて制作しています。</p>
           </div>
@@ -77,26 +119,28 @@
       <section id="service">
         <div class="container">
           <h1 class="section-title">service</h1>
-          <div class="service-group">
-            <p class="service-group-text">サービス内容</p>
-            <ul class="service-group-list">
-              <li>オーダーメイドテーブル制作</li>
-              <li>天板販売</li>
-              <li>レジン加工</li>
-              <li>メンテナンス</li>
-            </ul>
-          </div>
-          <div class="process-group">
-            <p class="process-group-text">制作の流れ</p>
-            <ol class="process-group-list">
-              <li>お問い合わせ</li>
-              <li>ヒアリング</li>
-              <li>木材選定</li>
-              <li>デザイン提案</li>
-              <li>制作</li>
-              <li>納品</li>
-              <li>メンテナンス案内</li>
-            </ol>
+          <div class="service-container">
+            <div class="service-group">
+              <p class="service-group-text">サービス内容</p>
+              <ul class="service-group-list">
+                <li>オーダーメイドテーブル制作</li>
+                <li>天板販売</li>
+                <li>レジン加工</li>
+                <li>メンテナンス</li>
+              </ul>
+            </div>
+            <div class="process-group">
+              <p class="process-group-text">制作の流れ</p>
+              <ol class="process-group-list">
+                <li>お問い合わせ</li>
+                <li>ヒアリング</li>
+                <li>木材選定</li>
+                <li>デザイン提案</li>
+                <li>制作</li>
+                <li>納品</li>
+                <li>メンテナンス案内</li>
+              </ol>
+            </div>
           </div>
         </div>
       </section>
@@ -106,8 +150,8 @@
           <div class="contact-group">
             <p>住所：〒939-0082富山県黒部市生地芦区104</p>
             <p>TEL：090-3885-0915</p>
-            <p>Mail:hitotoki1006@gmail.com</p>
-            <p>Instagram:@HITOTOKI1006<a href="#"><i class="bi bi-instagram"></i></a></p>
+            <p>Mail: hitotoki1006@gmail.com</p>
+            <p>Instagram: @HITOTOKI1006<a href="https://www.instagram.com/HITOTOKI1006/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a></p>
           </div>
 
         </div>
